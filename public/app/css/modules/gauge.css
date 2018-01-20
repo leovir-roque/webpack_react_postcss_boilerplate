@@ -1,0 +1,43 @@
+.gauge {
+    align-items: center;
+    display: flex;
+
+    &__label {
+        font-size: var(--font-size-xsmall);
+        font-weight: var(--font-weight-bold);
+        margin-right: 12px;
+        min-width: 70px;
+        text-transform: uppercase;
+    }
+
+    &__bar {
+        color: var(--primary-color);
+        flex: 1 0 auto;
+        height: 24px;
+        margin: 4px 0;
+        position: relative;
+
+        &::before {
+            background-color: currentColor;
+            content: '';
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    }
+
+
+    &__pointer {
+        position: absolute;
+        height: inherit;
+        width: 6px;
+        background-color: currentColor;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        border-radius: 3px;
+    }
+}
+

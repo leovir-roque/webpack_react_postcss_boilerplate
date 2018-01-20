@@ -1,0 +1,14 @@
+.nav {
+    &__link {
+        color: var(--copy-color);
+        display: block;
+        font-size: var(--font-size);
+        font-weight: var(--font-weight-bold);
+        margin-bottom: 16px;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}

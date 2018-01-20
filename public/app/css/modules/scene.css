@@ -1,0 +1,40 @@
+.scene {
+    background: var(--mono-color-lightest);
+    border-radius: 8px;
+    border: 1px solid var(--mono-color-light);
+    box-shadow: 0 0 10px 0 color(var(--mono-color-darkest) alpha(-90%));
+    margin-bottom: 32px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__inner {
+        display: flex;
+        padding: 16px 24px 24px;
+    }
+
+    &__content {
+        flex: 1 0 65%;
+        padding-right: 24px;
+    }
+
+    &__details {
+        max-height: 320px;
+        overflow: auto;
+    }
+
+    &__analysis {
+        border-left: 1px solid var(--mono-color-light);
+        flex: 1 0 35%;
+        padding-left: 24px;
+    }
+
+    &__title {
+        border-bottom: inherit;
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-normal);
+        padding: 12px 24px 4px;
+    }
+}

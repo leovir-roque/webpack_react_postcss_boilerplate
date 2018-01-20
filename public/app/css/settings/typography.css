@@ -1,0 +1,18 @@
+:root {
+    /* Font size */
+    --font-size-xxsmall: 10px;
+    --font-size-xsmall: 11px;
+    --font-size-small: 14px;
+    --font-size: 16px;
+    --font-size-large: 19px;
+    --font-size-xlarge: 24px;
+    --font-size-xxlarge: 32px;
+
+    /* Font Weight */
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    /* Font Family */
+    --font-family-primary: "Helvetica", Arial, sans-serif;
+    --font-family-secondary: "Montserrat", Helvetica, Arial, sans-serif;
+}

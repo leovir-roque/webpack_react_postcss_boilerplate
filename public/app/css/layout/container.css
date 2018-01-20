@@ -1,0 +1,6 @@
+.container {
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+    padding-left: var(--site-padding);
+    padding-right: var(--site-padding);
+}
