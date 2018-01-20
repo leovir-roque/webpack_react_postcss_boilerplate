@@ -9,8 +9,7 @@
     --mono-color-dark: #2b3340;
     --mono-color-darkest: #000;
 
-    --copy-color: var(--mono-color-dark);
-    --copy-color-invert: var(--mono-color-lightest);
+    --background-color: var(--mono-color-lightest);
 
-    --background-color: var(--mono-color-xlight);
+    --copy-color: var(--mono-color-dark);
 }

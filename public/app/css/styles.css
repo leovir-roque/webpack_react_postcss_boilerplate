@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
-
+/* Settings */
 @import url(./settings/variables.css);
+
+/* Tools */
+@import url(./tools/mixins.css);
+
+/* Generic */
 @import url(./libs/reset.css);
 @import url(./base/global.css);
 
+/* Layout */
 @import url(./layout/container.css);
-@import url(./layout/play.css);
+@import url(./layout/grid.css);
 
-@import url(./modules/nav.css);
+/* Modules */
 @import url(./modules/logo.css);
-@import url(./modules/act.css);
-@import url(./modules/scene.css);
-@import url(./modules/speech.css);
-@import url(./modules/gauge.css);
-@import url(./modules/progress.css);
+
+/* Trumps */
+@import url(./trumps/states.css);

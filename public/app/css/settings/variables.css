@@ -1,3 +1,4 @@
 @import url(./colors.css);
-@import url(./typography.css);
+@import url(./breakpoints.css);
 @import url(./site.css);
+@import url(./typography.css);

@@ -1,0 +1,4 @@
+@custom-media --min-breakpoint-desktop (min-width: 960px);
+@custom-media --max-breakpoint-tablet (max-width: 960px);
+@custom-media --min-breakpoint-tablet (min-width: 680px);
+@custom-media --max-breakpoint-mobile (max-width: 680px);

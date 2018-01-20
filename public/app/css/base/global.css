@@ -1,7 +1,6 @@
 html {
     height: 100%;
     box-sizing: border-box;
-    font-size: 62.5%;
     font-family: var(--font-family-primary);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
