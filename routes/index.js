@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Webpack + ReactJS + PostCSS Boilerplate' });
+  res.render('index', { title: 'Hello! Webpack + ReactJS + PostCSS Boilerplate' });
 });
 
 module.exports = router;

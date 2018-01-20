@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDom from 'react-dom';
-import Acts from './components/Acts.js';
+import SamplePage from './containers/SamplePage.js';
 
-class App extends Component{
+class App extends React.Component {
     render() {
         return (
-            <Acts />
+            <SamplePage />
         )
     }
 }

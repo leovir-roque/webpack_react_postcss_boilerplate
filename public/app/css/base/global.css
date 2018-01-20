@@ -17,4 +17,19 @@ body {
     background-color: var(--background-color);
     color: var(--copy-color);
     min-width: var(--site-min-width);
+    font-size: var(--font-size);
+}
+
+h1 {
+    font-size: 31px;
+    font-weight: var(--font-weight-bold);
+    margin: 24px 0 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+strong {
+    font-weight: var(--font-weight-bold);
 }
