@@ -3,9 +3,10 @@ Boilerplate for webpack + react + postcss with sample codes.
 
 #### What's in here?
 - Node
+- Express
+- Handlebars
 - Webpack
 - PostCSS
-- Handle Bars
 - ReactJS
 - Jest
 
