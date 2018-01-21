@@ -4,19 +4,27 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-
 var app = express();
+
+var isProduction = process.env.NODE_ENV === 'production';
+var port = isProduction ? process.env.PORT : 3000;
+var publicPath = path.join(__dirname, 'public');
+
+app.use(express.static(publicPath));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
+
+// parsers
 app.use(bodyParser.json({limit: '5mb'}));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+
+// routes
+var index = require('./routes/index');
 
 app.use('/', index);
 
@@ -35,7 +43,12 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('404');
+});
+
+// And run the server
+app.listen(port, function () {
+  console.log('Server running on port ' + port);
 });
 
 module.exports = app;

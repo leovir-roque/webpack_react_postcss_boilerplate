@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack --config webpack.config.js && node ./bin/www"
+    "serve": "node app.js",
+    "build": "webpack --watch --config webpack.config.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -25,7 +26,8 @@
     "postcss-nested-selectors": "^0.1.1",
     "react-test-renderer": "^16.2.0",
     "style-loader": "^0.19.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
