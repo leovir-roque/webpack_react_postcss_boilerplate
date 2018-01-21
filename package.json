@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "serve": "node app.js",
-    "build": "webpack --watch --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack --watch --config webpack.config.js & npm run serve"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

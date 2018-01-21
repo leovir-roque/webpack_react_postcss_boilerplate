@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
 
 // And run the server
 app.listen(port, function () {
-  console.log('Server running on port ' + port);
+  console.log('Your server is now running on port ' + port);
 });
 
 module.exports = app;
