@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SampleComponent Test Renders the component 1`] = `
+<div
+  className="sample"
+>
+  <div
+    className="sample__value"
+  >
+    Increment from 
+    <strong>
+      0
+    </strong>
+  </div>
+  <button
+    className="sample__btn"
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+</div>
+`;

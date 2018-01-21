@@ -1,2 +1,6 @@
+# Node
 node_modules
+npm-debug.log
+
+# Generated Assets
 public/build
